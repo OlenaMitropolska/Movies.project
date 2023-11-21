@@ -22,17 +22,17 @@ const [movie, setMovie] = useState({})
 
   return (
     <div className="App">
-<Link to={"/moviespage"} ><button>Movies Page</button></Link>
+{/* <Link to={"/moviespage"} ><button className='btnToMovies'>Select A Movie</button></Link>
 <Link to={"/"} ><button>Home Page</button></Link>
-<Link to={"/selectedmovie"} ><button>Selected Movie Page</button></Link>
+<Link to={"/selectedmovie"} ><button>Selected Movie Page</button></Link> */}
 
 
 <Routes>
 <Route path='/' element={<Home />} />
 
-<Route path='/moviespage' element={<MoviesPage objData={objData} />} />
+<Route path='/moviespage' element={<MoviesPage objData={objData} selectingMovie={setMovie} />} />
 
-<Route path='/selectedmovie' element={<SelectedMovie setMovie={setMovie} />} />
+<Route path='/selectedmovie' element={<SelectedMovie movie={movie} />} />
 
 <Route path='/*' element={<ErrorPage />} />
 

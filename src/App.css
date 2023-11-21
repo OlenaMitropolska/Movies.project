@@ -14,9 +14,70 @@ body {
 .App {
     height: 100%;
     width: 100%;
+    background-color: rgba(245, 245, 220, 0.733);
+    overflow: auto;
+}
+.mainHome {
+    height: 100%;
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.btnToMovies {
+    padding: 20px 30px;
+    font-size: 2em;
+    border: 1px solid rgb(107, 106, 106);
+    color: rgb(77, 77, 77);
+    border-radius: 20px;
+    background-color: beige;
+}
+.mainMoviesPage {
+    height: 100%;
+    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 100px;
 }
 .displayCard {
 height: 200px;
-width: 200px;
+width: 300px;
 border: 1px solid black;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+gap: 10px;
+border: 1px solid rgb(107, 106, 106);
+color: rgb(68, 67, 67);
+border-radius: 20px;
+}
+.displayCard button {
+    width: fit-content;
+    padding: 10px 30px;
+    border: 1px solid rgb(107, 106, 106);
+    color: rgb(77, 77, 77);
+    border-radius: 20px;
+}
+.moviePage {
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 10px;
+color: rgb(40, 39, 39);
+}
+.moviePage img {
+    height: 600px;
+    width: 400px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid rgb(107, 106, 106);
+    border-radius: 20px;
 }

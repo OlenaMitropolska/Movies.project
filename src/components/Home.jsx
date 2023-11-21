@@ -1,8 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div className='mainHome'>
+  <Link to={"/moviespage"} ><button className='btnToMovies'>Select A Movie</button></Link>
+    </div>
   )
 }
 
