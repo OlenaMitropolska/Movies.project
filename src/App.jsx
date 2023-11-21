@@ -32,7 +32,7 @@ const [movie, setMovie] = useState({})
 
 <Route path='/moviespage' element={<MoviesPage objData={objData} />} />
 
-<Route path='/selectedmovie' element={<SelectedMovie />} />
+<Route path='/selectedmovie' element={<SelectedMovie setMovie={setMovie} />} />
 
 <Route path='/*' element={<ErrorPage />} />
 
