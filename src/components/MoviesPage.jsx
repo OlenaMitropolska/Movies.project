@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 function MoviesPage(props) {
@@ -22,10 +22,12 @@ navigate("/selectedmovie")
 <button onClick={()=> clickHandler(i)}>View Info</button>
 </div>
 
-
-
-
 )}
+
+<div className="buttonto">
+<Link to={"/addmovie"}><button>Add Movie</button></Link>
+</div>
+
 
     </div>
   )

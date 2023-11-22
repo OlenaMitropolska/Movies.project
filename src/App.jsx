@@ -7,6 +7,7 @@ import MoviesPage from './components/MoviesPage';
 import SelectedMovie from './components/SelectedMovie';
 import ErrorPage from './components/ErrorPage';
 import { useState } from 'react';
+import AddMovie from './components/AddMovie';
 // console.log(moviesData[0].Title);
 
 
@@ -33,6 +34,8 @@ const [movie, setMovie] = useState({})
 <Route path='/moviespage' element={<MoviesPage objData={objData} selectingMovie={setMovie} />} />
 
 <Route path='/selectedmovie' element={<SelectedMovie movie={movie} />} />
+
+<Route path='/addmovie' element={<AddMovie  ObjData={ setObjData} />} />
 
 <Route path='/*' element={<ErrorPage />} />
 
