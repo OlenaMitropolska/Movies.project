@@ -31,7 +31,7 @@ const [movie, setMovie] = useState({})
 <Routes>
 <Route path='/' element={<Home />} />
 
-<Route path='/moviespage' element={<MoviesPage objData={objData} selectingMovie={setMovie} />} />
+<Route path='/moviespage' element={<MoviesPage objData={objData} selectingMovie={setMovie} deleteArray={setObjData} />} />
 
 <Route path='/selectedmovie' element={<SelectedMovie movie={movie} />} />
 
